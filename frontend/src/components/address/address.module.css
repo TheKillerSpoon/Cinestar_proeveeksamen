@@ -1,0 +1,26 @@
+@import url("../../styleVariables.css");
+
+.container {
+  & i {
+    color: var(--primary-color);
+    font-size: 36px;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-block: 13px;
+    & li {
+      display: flex;
+      gap: 20px;
+      padding-block: 10px;
+      & p,
+      a {
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+      }
+    }
+  }
+}

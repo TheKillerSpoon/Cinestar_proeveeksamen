@@ -1,0 +1,73 @@
+@import url("../../styleVariables.css");
+
+.award {
+  padding: 0 64px 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.kontakt {
+  padding: 100px 20px;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    z-index: -1;
+    object-fit: cover;
+  }
+}
+
+.blogs {
+  padding: 100px 20px;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  & article {
+    border: 1px solid #99999963;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    & img {
+      width: 100%;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      font-family: var(--text-font);
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    p {
+      font-weight: 400;
+    }
+
+    & h1,
+    p,
+    time {
+      padding-inline: 20px;
+      font-size: 20px;
+    }
+
+    & time {
+      text-align: end;
+      font-size: 13px;
+      line-height: 30px;
+    }
+  }
+}

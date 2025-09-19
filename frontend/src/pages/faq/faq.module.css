@@ -1,0 +1,55 @@
+@import url("../../styleVariables.css");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-inline: 20px;
+
+  & p {
+    padding: 30px 6px 0;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 500;
+  }
+
+  & details {
+    & summary {
+      background-color: var(--white);
+      color: var(--black);
+      padding: 14px 17px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 700;
+
+      & i {
+        width: 62px;
+        height: 62px;
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        &::before {
+          align-self: center;
+        }
+      }
+
+      & .close {
+        display: none;
+      }
+    }
+    &[open] summary {
+      background-color: var(--primary-color);
+      color: var(--white);
+      & .open {
+        display: none;
+      }
+      & .close {
+        display: inline;
+      }
+    }
+  }
+}
